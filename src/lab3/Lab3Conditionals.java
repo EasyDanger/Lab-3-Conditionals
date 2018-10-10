@@ -51,6 +51,22 @@ public class Lab3Conditionals {
 		}
 
 			read.nextLine();
+			System.out.println("Would you like to try again? (y/n)");
+			String tryAgain = read.nextLine();
+			
+			if (tryAgain.equals("y")) {
+				System.out.println("Okay. Enter another number, then, " + userName + ".");
+				x = 333;
+			
+			}
+			else if (tryAgain.equals("n")) {
+				System.out.println("Alright, then.");
+				x = 8675309;
+			}
+			else {
+				System.out.println("I don't know what that means, " + userName + ", so I think we're just gonna call it here.");
+				x = 616;
+			}
 		}
 		while(x == 333);
 		read.close();
